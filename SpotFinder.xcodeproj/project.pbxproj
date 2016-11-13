@@ -31,7 +31,6 @@
 		3CF6C5711DD7B2B8009081C7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF6C5701DD7B2B8009081C7 /* QuartzCore.framework */; };
 		3CF6C5731DD7B2C2009081C7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF6C5721DD7B2C2009081C7 /* SystemConfiguration.framework */; };
 		3CF6C5751DD7B2CC009081C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF6C5741DD7B2CC009081C7 /* UIKit.framework */; };
-		75EEFD181DD7C48300281591 /* yo.svg in Resources */ = {isa = PBXBuildFile; fileRef = 75EEFD171DD7C48300281591 /* yo.svg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,7 +82,6 @@
 		3CF6C5701DD7B2B8009081C7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		3CF6C5721DD7B2C2009081C7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		3CF6C5741DD7B2CC009081C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		75EEFD171DD7C48300281591 /* yo.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = yo.svg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +156,6 @@
 				3CF6C4E81DD7A016009081C7 /* AppDelegate.swift */,
 				3CF6C4EA1DD7A016009081C7 /* ViewController.swift */,
 				3CF6C4EC1DD7A016009081C7 /* Main.storyboard */,
-				75EEFD171DD7C48300281591 /* yo.svg */,
 				3CF6C4EF1DD7A016009081C7 /* Assets.xcassets */,
 				3CF6C4F11DD7A016009081C7 /* LaunchScreen.storyboard */,
 				3CF6C4F41DD7A016009081C7 /* Info.plist */,
@@ -312,7 +309,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75EEFD181DD7C48300281591 /* yo.svg in Resources */,
 				3CF6C4F31DD7A016009081C7 /* LaunchScreen.storyboard in Resources */,
 				3CF6C4F01DD7A016009081C7 /* Assets.xcassets in Resources */,
 				3CF6C4EE1DD7A016009081C7 /* Main.storyboard in Resources */,
