@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CCC36E51DD907B800CD45F4 /* GooglePlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCC36E41DD907B800CD45F4 /* GooglePlaces.framework */; };
+		3CCC36EB1DD908B200CD45F4 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3CCC36EA1DD908B200CD45F4 /* GoogleMaps.bundle */; };
+		3CCC36EF1DD90DF500CD45F4 /* GooglePlaces.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3CCC36EE1DD90DF500CD45F4 /* GooglePlaces.bundle */; };
+		3CCC36F11DD90E2300CD45F4 /* GooglePlacePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCC36F01DD90E2300CD45F4 /* GooglePlacePicker.framework */; };
+		3CCC36F31DD90E2F00CD45F4 /* GooglePlacePicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3CCC36F21DD90E2F00CD45F4 /* GooglePlacePicker.bundle */; };
 		3CF6C4E91DD7A016009081C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF6C4E81DD7A016009081C7 /* AppDelegate.swift */; };
 		3CF6C4EB1DD7A016009081C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF6C4EA1DD7A016009081C7 /* ViewController.swift */; };
 		3CF6C4EE1DD7A016009081C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF6C4EC1DD7A016009081C7 /* Main.storyboard */; };
@@ -17,7 +22,6 @@
 		3CF6C5521DD7AF22009081C7 /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF6C5511DD7AF22009081C7 /* GoogleMapsBase.framework */; };
 		3CF6C5541DD7AF55009081C7 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF6C5531DD7AF55009081C7 /* GoogleMaps.framework */; };
 		3CF6C5561DD7AF77009081C7 /* GoogleMapsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF6C5551DD7AF77009081C7 /* GoogleMapsCore.framework */; };
-		3CF6C5581DD7B04C009081C7 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3CF6C5571DD7B04C009081C7 /* GoogleMaps.bundle */; };
 		3CF6C55B1DD7B237009081C7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF6C55A1DD7B237009081C7 /* Accelerate.framework */; };
 		3CF6C55F1DD7B252009081C7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF6C55C1DD7B252009081C7 /* CoreData.framework */; };
 		3CF6C5611DD7B252009081C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF6C55E1DD7B252009081C7 /* CoreGraphics.framework */; };
@@ -31,6 +35,7 @@
 		3CF6C5711DD7B2B8009081C7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF6C5701DD7B2B8009081C7 /* QuartzCore.framework */; };
 		3CF6C5731DD7B2C2009081C7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF6C5721DD7B2C2009081C7 /* SystemConfiguration.framework */; };
 		3CF6C5751DD7B2CC009081C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF6C5741DD7B2CC009081C7 /* UIKit.framework */; };
+		75EEFD181DD7C48300281591 /* yo.svg in Resources */ = {isa = PBXBuildFile; fileRef = 75EEFD171DD7C48300281591 /* yo.svg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3CCC36E41DD907B800CD45F4 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlaces.framework; sourceTree = "<group>"; };
+		3CCC36EA1DD908B200CD45F4 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		3CCC36EE1DD90DF500CD45F4 /* GooglePlaces.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = GooglePlaces.framework/Versions/A/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		3CCC36F01DD90E2300CD45F4 /* GooglePlacePicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlacePicker.framework; sourceTree = "<group>"; };
+		3CCC36F21DD90E2F00CD45F4 /* GooglePlacePicker.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlacePicker.bundle; path = GooglePlacePicker.framework/Versions/A/Resources/GooglePlacePicker.bundle; sourceTree = "<group>"; };
 		3CF6C4E51DD7A016009081C7 /* SpotFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CF6C4E81DD7A016009081C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CF6C4EA1DD7A016009081C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,7 +77,6 @@
 		3CF6C5511DD7AF22009081C7 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsBase.framework; sourceTree = "<group>"; };
 		3CF6C5531DD7AF55009081C7 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
 		3CF6C5551DD7AF77009081C7 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsCore.framework; sourceTree = "<group>"; };
-		3CF6C5571DD7B04C009081C7 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		3CF6C55A1DD7B237009081C7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		3CF6C55C1DD7B252009081C7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		3CF6C55D1DD7B252009081C7 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -82,6 +91,7 @@
 		3CF6C5701DD7B2B8009081C7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		3CF6C5721DD7B2C2009081C7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		3CF6C5741DD7B2CC009081C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		75EEFD171DD7C48300281591 /* yo.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = yo.svg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,9 +100,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CF6C5751DD7B2CC009081C7 /* UIKit.framework in Frameworks */,
+				3CCC36F11DD90E2300CD45F4 /* GooglePlacePicker.framework in Frameworks */,
 				3CF6C5731DD7B2C2009081C7 /* SystemConfiguration.framework in Frameworks */,
 				3CF6C5711DD7B2B8009081C7 /* QuartzCore.framework in Frameworks */,
 				3CF6C56F1DD7B2AF009081C7 /* OpenGLES.framework in Frameworks */,
+				3CCC36E51DD907B800CD45F4 /* GooglePlaces.framework in Frameworks */,
 				3CF6C56D1DD7B2A4009081C7 /* libz.tbd in Frameworks */,
 				3CF6C56B1DD7B292009081C7 /* libc++.tbd in Frameworks */,
 				3CF6C5691DD7B280009081C7 /* ImageIO.framework in Frameworks */,
@@ -149,13 +161,18 @@
 		3CF6C4E71DD7A016009081C7 /* SpotFinder */ = {
 			isa = PBXGroup;
 			children = (
-				3CF6C5571DD7B04C009081C7 /* GoogleMaps.bundle */,
+				3CCC36F21DD90E2F00CD45F4 /* GooglePlacePicker.bundle */,
+				3CCC36F01DD90E2300CD45F4 /* GooglePlacePicker.framework */,
+				3CCC36EE1DD90DF500CD45F4 /* GooglePlaces.bundle */,
+				3CCC36EA1DD908B200CD45F4 /* GoogleMaps.bundle */,
+				3CCC36E41DD907B800CD45F4 /* GooglePlaces.framework */,
 				3CF6C5551DD7AF77009081C7 /* GoogleMapsCore.framework */,
 				3CF6C5511DD7AF22009081C7 /* GoogleMapsBase.framework */,
 				3CF6C5531DD7AF55009081C7 /* GoogleMaps.framework */,
 				3CF6C4E81DD7A016009081C7 /* AppDelegate.swift */,
 				3CF6C4EA1DD7A016009081C7 /* ViewController.swift */,
 				3CF6C4EC1DD7A016009081C7 /* Main.storyboard */,
+				75EEFD171DD7C48300281591 /* yo.svg */,
 				3CF6C4EF1DD7A016009081C7 /* Assets.xcassets */,
 				3CF6C4F11DD7A016009081C7 /* LaunchScreen.storyboard */,
 				3CF6C4F41DD7A016009081C7 /* Info.plist */,
@@ -309,10 +326,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75EEFD181DD7C48300281591 /* yo.svg in Resources */,
 				3CF6C4F31DD7A016009081C7 /* LaunchScreen.storyboard in Resources */,
 				3CF6C4F01DD7A016009081C7 /* Assets.xcassets in Resources */,
+				3CCC36EB1DD908B200CD45F4 /* GoogleMaps.bundle in Resources */,
+				3CCC36EF1DD90DF500CD45F4 /* GooglePlaces.bundle in Resources */,
+				3CCC36F31DD90E2F00CD45F4 /* GooglePlacePicker.bundle in Resources */,
 				3CF6C4EE1DD7A016009081C7 /* Main.storyboard in Resources */,
-				3CF6C5581DD7B04C009081C7 /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

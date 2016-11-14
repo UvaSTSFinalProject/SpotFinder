@@ -8,27 +8,48 @@
 
 import UIKit
 import GoogleMaps
+import GooglePlaces
 
 class ViewController: UIViewController {
-
+    
+    
+    var placesClient: GMSPlacesClient?
+    
+    // Add a pair of UILabels in Interface Builder, and connect the outlets to these variables.
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var addressLabel: UILabel!
+    @IBOutlet weak var search: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        placesClient = GMSPlacesClient.shared()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     override func loadView() {
         // Create a GMSCameraPosition that tells the map to display the
         // coordinate -33.86,151.20 at zoom level 6.
-        
-        //let cameraBella = GMSCameraPosition.camera(withLatitude: 38.0316, longitude: -78.4900, zoom: 18.0)
-        let camera = GMSCameraPosition.camera(withLatitude: 38.0329, longitude: -78.5134, zoom: 8.0)
+        let camera = GMSCameraPosition.camera(withLatitude: 38.0293, longitude: -78.4767, zoom: 8.0)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+        mapView.settings.scrollGestures = true
+        mapView.settings.zoomGestures = true
+        mapView.settings.myLocationButton = true
+        mapView.settings.compassButton = true
         mapView.isMyLocationEnabled = true
         view = mapView
+        
+        // Creates a marker in the center of the map.
+        let marker = GMSMarker()
+        marker.position = CLLocationCoordinate2D(latitude: 38.0293, longitude: -78.4767)
+        marker.title = "University of Virginia"
+        marker.snippet = "UVA"
+        marker.icon = GMSMarker.markerImage(with: UIColor.green)
+        marker.map = mapView
         
         // Creates a marker in the center of the map.
         let start = GMSMarker()
@@ -88,12 +109,35 @@ class ViewController: UIViewController {
         markerAFC5.icon = GMSMarker.markerImage(with: UIColor.black)
         markerAFC5.title = "free spots: " + "18/18"
         markerAFC5.map = mapView
+        
+        
 
-        
-       
- 
-        
     }
-
+    
+    // Add a UIButton in Interface Builder, and connect the action to this function.
+    @IBAction func getCurrentPlace(sender: UIButton) {
+        
+        placesClient?.currentPlace(callback: {
+            (placeLikelihoodList: GMSPlaceLikelihoodList?, error: NSError?) -> Void in
+            if let error = error {
+                print("Pick Place error: \(error.localizedDescription)")
+                return
+            }
+            
+            self.nameLabel.text = "No current place"
+            self.addressLabel.text = ""
+            
+            if let placeLikelihoodList = placeLikelihoodList {
+                let place = placeLikelihoodList.likelihoods.first?.place
+                if let place = place {
+                    self.nameLabel.text = place.name
+                    self.addressLabel.text = place.formattedAddress!.components(separatedBy:", ")
+                        .joined(separator: "\n")
+                }
+            }
+        } as! GMSPlaceLikelihoodListCallback)
+    }
+    
+   
 }
 
