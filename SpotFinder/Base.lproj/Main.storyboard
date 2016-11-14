@@ -11,22 +11,23 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpotFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Search" id="6rh-v4-sM3">
-                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="VIC-W4-i7Q"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="yvb-rS-UWM">
+                            <connections>
+                                <action selector="searcgWithAddress:" destination="BYZ-38-t0r" id="0rA-YH-vtM"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="search" destination="VIC-W4-i7Q" id="Kjl-Pp-pZ1"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="850" y="184"/>
+            <point key="canvasLocation" x="938" y="152"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ecr-NJ-eJF">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GmW-47-1dc" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xqS-Oq-WQ4">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="xqS-Oq-WQ4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

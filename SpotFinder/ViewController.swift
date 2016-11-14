@@ -16,9 +16,11 @@ class ViewController: UIViewController {
     var placesClient: GMSPlacesClient?
     
     // Add a pair of UILabels in Interface Builder, and connect the outlets to these variables.
-    @IBOutlet var nameLabel: UILabel!
-    @IBOutlet var addressLabel: UILabel!
-    @IBOutlet weak var search: UIBarButtonItem!
+    @IBAction func searchWithAddress(_ sender: AnyObject) {
+        
+    }
+
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -115,10 +117,9 @@ class ViewController: UIViewController {
     }
     
     // Add a UIButton in Interface Builder, and connect the action to this function.
-    @IBAction func getCurrentPlace(sender: UIButton) {
+    /*@IBAction func getCurrentPlace(sender: UIButton) {
         
-        placesClient?.currentPlace(callback: {
-            (placeLikelihoodList: GMSPlaceLikelihoodList?, error: NSError?) -> Void in
+        placesClient?.currentPlace(callback: {(list: GMSPlaceLikelihoodList?, error: Error?) in
             if let error = error {
                 print("Pick Place error: \(error.localizedDescription)")
                 return
@@ -127,7 +128,7 @@ class ViewController: UIViewController {
             self.nameLabel.text = "No current place"
             self.addressLabel.text = ""
             
-            if let placeLikelihoodList = placeLikelihoodList {
+            if let placeLikelihoodList = list {
                 let place = placeLikelihoodList.likelihoods.first?.place
                 if let place = place {
                     self.nameLabel.text = place.name
@@ -135,9 +136,8 @@ class ViewController: UIViewController {
                         .joined(separator: "\n")
                 }
             }
-        } as! GMSPlaceLikelihoodListCallback)
-    }
-    
+    })
+    }*/
    
 }
 
