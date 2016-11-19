@@ -9,10 +9,12 @@
 import UIKit
 import GoogleMaps
 import GooglePlaces
+import MapKit
+import CoreLocation
 
 class ViewController: UIViewController {
     
-    
+    var actionButton: ActionButton!
     var placesClient: GMSPlacesClient?
     
     // Add a pair of UILabels in Interface Builder, and connect the outlets to these variables.
@@ -26,8 +28,30 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         placesClient = GMSPlacesClient.shared()
+        super.viewDidLoad()
+        
+        let twitterImage = UIImage(named: "twitter_icon.png")!
+        let plusImage = UIImage(named: "googleplus_icon.png")!
+        
+        let twitter = ActionButtonItem(title: "Twitter", image: twitterImage)
+        twitter.action = { item in print("Twitter...") }
+        
+        let google = ActionButtonItem(title: "Google Plus", image: plusImage)
+        google.action = { item in print("Google Plus...") }
+        
+        actionButton = ActionButton(attachedToView: self.view, items: [twitter, google])
+        actionButton.action = { button in button.toggleMenu() }
+        actionButton.setTitle("+", forState: UIControlState())
+        
+        actionButton.backgroundColor = UIColor(red: 238.0/255.0, green: 130.0/255.0, blue: 34.0/255.0, alpha:1.0)
+    }
+    
+    
+    @IBAction func reserve(_ sender: UIButton) {
+        
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

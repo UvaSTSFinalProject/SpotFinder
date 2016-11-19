@@ -35,6 +35,8 @@
 		3CF6C5711DD7B2B8009081C7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF6C5701DD7B2B8009081C7 /* QuartzCore.framework */; };
 		3CF6C5731DD7B2C2009081C7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF6C5721DD7B2C2009081C7 /* SystemConfiguration.framework */; };
 		3CF6C5751DD7B2CC009081C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF6C5741DD7B2CC009081C7 /* UIKit.framework */; };
+		750C39131DE0F8190037703B /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750C39121DE0F8190037703B /* ActionButton.swift */; };
+		750C39151DE0F8510037703B /* ActionButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750C39141DE0F8510037703B /* ActionButtonItem.swift */; };
 		75EEFD181DD7C48300281591 /* yo.svg in Resources */ = {isa = PBXBuildFile; fileRef = 75EEFD171DD7C48300281591 /* yo.svg */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +93,8 @@
 		3CF6C5701DD7B2B8009081C7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		3CF6C5721DD7B2C2009081C7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		3CF6C5741DD7B2CC009081C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		750C39121DE0F8190037703B /* ActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActionButton.swift; path = SpotFinderTests/ActionButton.swift; sourceTree = SOURCE_ROOT; };
+		750C39141DE0F8510037703B /* ActionButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActionButtonItem.swift; path = SpotFinderTests/ActionButtonItem.swift; sourceTree = SOURCE_ROOT; };
 		75EEFD171DD7C48300281591 /* yo.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = yo.svg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,6 +144,7 @@
 		3CF6C4DC1DD7A016009081C7 = {
 			isa = PBXGroup;
 			children = (
+				750C39161DE0F9300037703B /* Source */,
 				3CF6C4E71DD7A016009081C7 /* SpotFinder */,
 				3CF6C4FC1DD7A016009081C7 /* SpotFinderTests */,
 				3CF6C5071DD7A016009081C7 /* SpotFinderUITests */,
@@ -217,6 +222,15 @@
 				3CF6C55A1DD7B237009081C7 /* Accelerate.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		750C39161DE0F9300037703B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				750C39141DE0F8510037703B /* ActionButtonItem.swift */,
+				750C39121DE0F8190037703B /* ActionButton.swift */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,7 +380,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				750C39151DE0F8510037703B /* ActionButtonItem.swift in Sources */,
 				3CF6C4FE1DD7A016009081C7 /* SpotFinderTests.swift in Sources */,
+				750C39131DE0F8190037703B /* ActionButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
