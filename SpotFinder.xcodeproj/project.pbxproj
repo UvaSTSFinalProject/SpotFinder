@@ -12,6 +12,12 @@
 		3CCC36EF1DD90DF500CD45F4 /* GooglePlaces.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3CCC36EE1DD90DF500CD45F4 /* GooglePlaces.bundle */; };
 		3CCC36F11DD90E2300CD45F4 /* GooglePlacePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCC36F01DD90E2300CD45F4 /* GooglePlacePicker.framework */; };
 		3CCC36F31DD90E2F00CD45F4 /* GooglePlacePicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3CCC36F21DD90E2F00CD45F4 /* GooglePlacePicker.bundle */; };
+		3CD2937E1DE141A50077C31D /* KCFABManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2937D1DE141A50077C31D /* KCFABManager.swift */; };
+		3CD293801DE141AE0077C31D /* KCFABViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2937F1DE141AE0077C31D /* KCFABViewController.swift */; };
+		3CD293821DE141B20077C31D /* KCFABWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD293811DE141B20077C31D /* KCFABWindow.swift */; };
+		3CD293841DE141B60077C31D /* KCFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD293831DE141B60077C31D /* KCFloatingActionButton.swift */; };
+		3CD293861DE141B90077C31D /* KCFloatingActionButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD293851DE141B90077C31D /* KCFloatingActionButtonDelegate.swift */; };
+		3CD293881DE141BC0077C31D /* KCFloatingActionButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD293871DE141BC0077C31D /* KCFloatingActionButtonItem.swift */; };
 		3CF6C4E91DD7A016009081C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF6C4E81DD7A016009081C7 /* AppDelegate.swift */; };
 		3CF6C4EB1DD7A016009081C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF6C4EA1DD7A016009081C7 /* ViewController.swift */; };
 		3CF6C4EE1DD7A016009081C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF6C4EC1DD7A016009081C7 /* Main.storyboard */; };
@@ -35,8 +41,6 @@
 		3CF6C5711DD7B2B8009081C7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF6C5701DD7B2B8009081C7 /* QuartzCore.framework */; };
 		3CF6C5731DD7B2C2009081C7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF6C5721DD7B2C2009081C7 /* SystemConfiguration.framework */; };
 		3CF6C5751DD7B2CC009081C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF6C5741DD7B2CC009081C7 /* UIKit.framework */; };
-		750C39131DE0F8190037703B /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750C39121DE0F8190037703B /* ActionButton.swift */; };
-		750C39151DE0F8510037703B /* ActionButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750C39141DE0F8510037703B /* ActionButtonItem.swift */; };
 		75EEFD181DD7C48300281591 /* yo.svg in Resources */ = {isa = PBXBuildFile; fileRef = 75EEFD171DD7C48300281591 /* yo.svg */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +67,13 @@
 		3CCC36EE1DD90DF500CD45F4 /* GooglePlaces.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = GooglePlaces.framework/Versions/A/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
 		3CCC36F01DD90E2300CD45F4 /* GooglePlacePicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlacePicker.framework; sourceTree = "<group>"; };
 		3CCC36F21DD90E2F00CD45F4 /* GooglePlacePicker.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlacePicker.bundle; path = GooglePlacePicker.framework/Versions/A/Resources/GooglePlacePicker.bundle; sourceTree = "<group>"; };
+		3CD2937D1DE141A50077C31D /* KCFABManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCFABManager.swift; sourceTree = "<group>"; };
+		3CD2937F1DE141AE0077C31D /* KCFABViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCFABViewController.swift; sourceTree = "<group>"; };
+		3CD293811DE141B20077C31D /* KCFABWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCFABWindow.swift; sourceTree = "<group>"; };
+		3CD293831DE141B60077C31D /* KCFloatingActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCFloatingActionButton.swift; sourceTree = "<group>"; };
+		3CD293851DE141B90077C31D /* KCFloatingActionButtonDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCFloatingActionButtonDelegate.swift; sourceTree = "<group>"; };
+		3CD293871DE141BC0077C31D /* KCFloatingActionButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCFloatingActionButtonItem.swift; sourceTree = "<group>"; };
+		3CD293891DE141BF0077C31D /* KCFloatingActionButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCFloatingActionButton.h; sourceTree = "<group>"; };
 		3CF6C4E51DD7A016009081C7 /* SpotFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CF6C4E81DD7A016009081C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CF6C4EA1DD7A016009081C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,8 +104,6 @@
 		3CF6C5701DD7B2B8009081C7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		3CF6C5721DD7B2C2009081C7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		3CF6C5741DD7B2CC009081C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		750C39121DE0F8190037703B /* ActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActionButton.swift; path = SpotFinderTests/ActionButton.swift; sourceTree = SOURCE_ROOT; };
-		750C39141DE0F8510037703B /* ActionButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActionButtonItem.swift; path = SpotFinderTests/ActionButtonItem.swift; sourceTree = SOURCE_ROOT; };
 		75EEFD171DD7C48300281591 /* yo.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = yo.svg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,7 +153,6 @@
 		3CF6C4DC1DD7A016009081C7 = {
 			isa = PBXGroup;
 			children = (
-				750C39161DE0F9300037703B /* Source */,
 				3CF6C4E71DD7A016009081C7 /* SpotFinder */,
 				3CF6C4FC1DD7A016009081C7 /* SpotFinderTests */,
 				3CF6C5071DD7A016009081C7 /* SpotFinderUITests */,
@@ -166,6 +174,13 @@
 		3CF6C4E71DD7A016009081C7 /* SpotFinder */ = {
 			isa = PBXGroup;
 			children = (
+				3CD293871DE141BC0077C31D /* KCFloatingActionButtonItem.swift */,
+				3CD293891DE141BF0077C31D /* KCFloatingActionButton.h */,
+				3CD293851DE141B90077C31D /* KCFloatingActionButtonDelegate.swift */,
+				3CD293831DE141B60077C31D /* KCFloatingActionButton.swift */,
+				3CD293811DE141B20077C31D /* KCFABWindow.swift */,
+				3CD2937F1DE141AE0077C31D /* KCFABViewController.swift */,
+				3CD2937D1DE141A50077C31D /* KCFABManager.swift */,
 				3CCC36F21DD90E2F00CD45F4 /* GooglePlacePicker.bundle */,
 				3CCC36F01DD90E2300CD45F4 /* GooglePlacePicker.framework */,
 				3CCC36EE1DD90DF500CD45F4 /* GooglePlaces.bundle */,
@@ -222,15 +237,6 @@
 				3CF6C55A1DD7B237009081C7 /* Accelerate.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		750C39161DE0F9300037703B /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				750C39141DE0F8510037703B /* ActionButtonItem.swift */,
-				750C39121DE0F8190037703B /* ActionButton.swift */,
-			);
-			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,7 +378,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CF6C4EB1DD7A016009081C7 /* ViewController.swift in Sources */,
+				3CD293841DE141B60077C31D /* KCFloatingActionButton.swift in Sources */,
 				3CF6C4E91DD7A016009081C7 /* AppDelegate.swift in Sources */,
+				3CD293801DE141AE0077C31D /* KCFABViewController.swift in Sources */,
+				3CD293881DE141BC0077C31D /* KCFloatingActionButtonItem.swift in Sources */,
+				3CD293821DE141B20077C31D /* KCFABWindow.swift in Sources */,
+				3CD293861DE141B90077C31D /* KCFloatingActionButtonDelegate.swift in Sources */,
+				3CD2937E1DE141A50077C31D /* KCFABManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,9 +392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				750C39151DE0F8510037703B /* ActionButtonItem.swift in Sources */,
 				3CF6C4FE1DD7A016009081C7 /* SpotFinderTests.swift in Sources */,
-				750C39131DE0F8190037703B /* ActionButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
